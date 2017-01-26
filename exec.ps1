@@ -1,5 +1,5 @@
 $web = new-object net.webclient
-iex $web.downloadstring('https://raw.githubusercontent.com/9whirls/webCommander_P/master/utils.ps1')
+iex $web.downloadstring("https://raw.githubusercontent.com/9whirls/webCommander_P/master/utils.ps1")
 
 $script = $args[0]
 if (test-path ".\$script") {
