@@ -19,7 +19,7 @@ for ( $i = 1; $i -lt $args.count; $i++ ) {
   $param = $args[$i]
   $param = [system.web.httputility]::urldecode($param)
   
-  if ($param -notmatch '^-') {
+  if ($param -notmatch "^-") {
     $param = "'" + $param.replace("'","''") + "'"
   }
   $params += $param
